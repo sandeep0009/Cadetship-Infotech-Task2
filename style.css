@@ -61,24 +61,31 @@ p , .p{
 
  .big-box{
     display: flex;
+    flex-direction: row;
     padding: 15px 15px 15px 15px;  
     flex-wrap: wrap;
+    margin: auto;  
+    justify-content: space-between;
  }
+
+
+
 
  
  .box{
     height: 300px;
     width: 400px;
+    flex-basis: 20%;
     border: 1px solid  rgb(184, 111, 3);
     position: relative;
-     margin: auto;
+    margin: 10px 0px;   
      text-align: center;
  }
 
  .box-content{
     height: 300px;
     width: 400px;
-
+   
     transform-style: preserve-3d;
     transition: transform 0.9sec;
 
@@ -143,7 +150,6 @@ p , .p{
       flex-direction: column;
       height: 140px;
       text-align: center;
-
    }
 
    .list ul{
@@ -157,19 +163,32 @@ p , .p{
       flex-direction: column;    
       justify-content: space-around;
       padding-bottom: 20px;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: auto;
+      
+
+    
    }
    .box{
-      margin-bottom: 20px;
+      margin: 10px 0px;
    }
+
 }
 
-@media only screen and(max-width:1000px) {
+@media only screen and(max-width:869px) {
+
+   .big-box{
+      flex-wrap: wrap;
+   }
    .box{
       flex-basis: 20%;
-
    }
+  
    
 }
+
+
 
 
 
