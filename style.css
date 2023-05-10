@@ -58,14 +58,11 @@ p , .p{
    
  }
 
- .identify{
-    height: 16px;
-    font-style: bold;
- }
 
  .big-box{
     display: flex;
     padding: 15px 15px 15px 15px;  
+    flex-wrap: wrap;
  }
 
  
@@ -164,9 +161,14 @@ p , .p{
    .box{
       margin-bottom: 20px;
    }
+}
 
+@media only screen and(max-width:1000px) {
+   .box{
+      flex-basis: 20%;
 
-
+   }
+   
 }
 
 
